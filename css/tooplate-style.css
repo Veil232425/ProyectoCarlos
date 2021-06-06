@@ -173,7 +173,7 @@ footer a:link, footer a:visited {
   align-content: space-between;
   width: 400px;
 } */
- .section-3 {
+ .section-n3 {
   position: relative;
   left: 100px;
   justify-content: center;
@@ -183,7 +183,7 @@ footer a:link, footer a:visited {
 
 }
 
-.section-4 {
+.section-n4 {
   top: 200px;
   position: relative;
   left: 100px;
@@ -194,7 +194,7 @@ footer a:link, footer a:visited {
 
 }  
 
-.section-5{
+.section-n5{
   top: 400px;
   position: relative;
   left: 100px;
@@ -205,7 +205,7 @@ footer a:link, footer a:visited {
 
 }
 
-.section-6{
+.section-n6{
   top: 600px;
   position: relative;
   left: 100px;
@@ -215,7 +215,7 @@ footer a:link, footer a:visited {
   
 
 }
-.section-7{
+.section-n7{
   top: 800px;
   position: relative;
   left: 100px;
@@ -225,7 +225,7 @@ footer a:link, footer a:visited {
   
 
 }
-.section-8{
+.section-n8{
   top: 1000px;
   position: relative;
   left: 100px;
@@ -235,7 +235,7 @@ footer a:link, footer a:visited {
   
 
 }
-.section-9{
+.section-n9{
   top: 1200px;
   position: relative;
   left: 100px;
@@ -245,7 +245,7 @@ footer a:link, footer a:visited {
   
 
 }
-.section-10{
+.section-n10{
   top: 1400px;
   position: relative;
   left: 100px;
@@ -255,7 +255,7 @@ footer a:link, footer a:visited {
   
 
 }
-.section-11{
+.section-n11{
   top: 1600px;
   position: relative;
   left: 100px;
@@ -265,16 +265,144 @@ footer a:link, footer a:visited {
   
 
 }
-.section-12{
+.section-n12{
   top: 1800px;
   position: relative;
   left: 100px;
   justify-content: center;
   width: 1200px;
+  height: 900px; 
+}
+
+section[class*="section-n"]:hover .imagenID {
+  opacity: 0.3;
+}
+
+/* section[class*="section-n"]:hover  .linkYPropiedad .verPropiedad{
+  opacity: 1;
+  color: black;
+  font-weight: bold;
+}  */
+section[class*="section-n"]:hover .linkYPropiedad {
+  opacity: 1;
+  background: rgba(255,215,0,0.3);
+}
+
+  section[class*="section-n"] .imagenID{ 
+  opacity: 1;
+  position: relative;
+  width: 1200px;
   height: 900px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  text-align: center;
+  
+} 
+
+.linkYPropiedad{
+  position: absolute;
+  transition: .5s ease;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  background-color: gold;
+  color: black;
+  font-size: 16px;
+  padding: 16px 32px;
+  /* border: none; */
+}
+/*Hover effect on Ver propiedad */
+
+.borders{
+  position:absolute;
+  background:none;
+  transition:all .5s ease-in-out;
+  border: none;
+ 
   
 
 }
+.linkYPropiedad >.borders:nth-of-type(1){
+  top: 0;
+  left:0;
+  width:0;
+  height:0;
+  border-top:3px solid black;
+ 
+ 
+
+  
+}
+.linkYPropiedad>.borders:nth-of-type(2){
+  top:0;
+  right:0;
+  width:0px;
+  height:0;
+  border-right:3px solid black;
+}
+
+.linkYPropiedad>.borders:nth-of-type(3){
+  bottom:0;
+  right:0;
+  width:0;
+  height:0;
+  border-bottom:3px solid black;
+}
+
+.linkYPropiedad>.borders:nth-of-type(4){
+  bottom:0;
+  left:0;
+  width:0;
+  height:0;
+  border-left:3px solid black;
+}
+
+.linkYPropiedad:hover .borders:nth-of-type(1){
+  width:100%;
+  
+ 
+}
+
+.linkYPropiedad:hover .borders:nth-of-type(2){
+  height:100%;
+ 
+}
+
+.linkYPropiedad:hover .borders:nth-of-type(3){
+  width:100%;
+}
+
+.linkYPropiedad:hover .borders:nth-of-type(4){
+  height:100%;
+}
+/****************************************/
+ 
+.verPropiedad{
+  opacity: 1;
+  position: relative;
+  color: black;
+  text-align: center;
+  font-size: 34px;
+  font-weight: bold;
+  top: -70px;;
+
+}
+
+.verPropiedad2{
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 34px;
+  color: black;
+
+}
+/*  .section-3 .sp-slides .imagenID{ 
+  position: relative;
+  width: 1200px;
+  height: 900px;
+}   */
+
 
 .tm-link:link,
 .tm-link:visited {
@@ -772,7 +900,15 @@ figure.effect-goliath:hover p {
 }
 
 @media (max-width: 480px) {
-
+  
+  .secciones{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height:1500px;
+    top: 1020px;
+  }
   .tm-contact-form {
    position: absolute;
    top:300px;
@@ -801,13 +937,13 @@ figure.effect-goliath:hover p {
   .tm-section-title {
     font-size: 2.4rem;
   }
-  .section-3 {
+  .section-n3 {
     
     width: 300px;
     margin-left:-70px;
     height: 100%
   } 
-  .section-4 {
+  .section-n4 {
     position: relative;
     top: 200px;
     width: 300px;
@@ -815,7 +951,13 @@ figure.effect-goliath:hover p {
     height: 100%
   
   } 
-  .section-5 {
+
+  section[class*="section-n"] .imagenID {
+    width: 300px;
+    height: 300px;
+  }
+
+  .section-n5 {
     position: relative;
     top: 400px;
     width: 300px;
@@ -823,42 +965,42 @@ figure.effect-goliath:hover p {
     height: 100%
   
   } 
-  .section-6 {
+  .section-n6 {
     position: relative;
     top: 600px;
     width: 300px;
     margin-left:-70px;
     height: 100%
   } 
-  .section-7{
+  .section-n7{
     position: relative;
     top: 800px;
     width: 300px;
     margin-left:-70px;
     height: 100%
   } 
-  .section-8 {
+  .section-n8 {
     position: relative;
     top: 1000px;
     width: 300px;
     margin-left:-70px;
     height: 100%
   } 
-  .section-9 {
+  .section-n9 {
     position: relative;
     top: 1200px;
     width: 300px;
     margin-left:-70px;
     height: 100%
   } 
-  .section-10 {
+  .section-n10 {
     position: relative;
     top: 1400px;
     width: 300px;
     margin-left:-70px;
     height: 100%
   } 
-  .section-11 {
+  .section-n11 {
     position: relative;
     top: 1600px;
     width: 300px;
@@ -866,16 +1008,21 @@ figure.effect-goliath:hover p {
     height: 100%
   } 
 
-  .section-12 {
+  .section-n12 {
     position: relative;
     top: 1800px;
     width: 300px;
     margin-left:-70px;
     height: 100%
   } 
+/* 
+  .imagenID{
+    position: absolute;
    
+ } */
   .sp-slides{
     width:200px;
+    margin-right:70px;
   }
   .sp-slide{
     width:300px;
@@ -889,12 +1036,10 @@ figure.effect-goliath:hover p {
   table tr > *{
     display: block;
 }
-.secciones {
-  position: relative;
-  top:200px;
- 
-
-}
+/* .secciones {
+  position: absolute;
+  top:24400px;
+} */
 
 
 .tm-static {
