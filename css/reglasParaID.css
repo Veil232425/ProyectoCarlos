@@ -1,0 +1,71 @@
+body {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 19px;
+    color: #ffffff;
+    overflow-x: hidden;
+    background: url("/img/house04.jpg") ;
+    background-size: cover;
+    background-attachment: fixed;
+   
+  }
+  .secciones {
+     position: absolute;  
+     display: flex;   
+     flex-direction: column;
+      max-width: 100%;
+      height:1500px;
+      top: 120px;
+      left:70px;
+      right:70px;
+    
+  }
+  .my-slider1{
+    left:70px;
+    right:120px;
+
+  }
+  .titulos{
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    font-size: 24px;
+  }
+  .modal-descripcion{         
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-image: url(../../img/house2.jpg);        
+    font-weight: bold;
+    /* height: auto; */
+     max-width: 100%;
+     height: 100%;
+     bottom:0px;   
+ }
+
+.btn {
+    background: gold;
+    color: black;
+    text-align: center;
+
+
+  }
+  .dinero{
+    color: green;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .lugar{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  @media (max-width:480px) {
+
+    table{
+      flex-direction: column;
+    }
+    table tr > *{
+      display: block;
+  }
+
+   
+  }
